@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #c17f7f;
+    margin: 20px; /* Reduje el margen para adaptarse mejor a dispositivos más pequeños */
+    font-size: 16px;
+    color: #333; /* Añadido para el color del texto en el body */
+}
+
+header {
+    background-color: #333;
+    color: #43e90c;
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #ffffff; /* Color del texto para los títulos */
+    text-align: left; /* Centrar los títulos */
+}
+
+h1{
+    color: #ffffff; /* Color del texto para los títulos */
+    text-align: center; /* Centrar los títulos */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Añadido estilo para las secciones específicas */
+h1, h2 {
+    margin-top: 20px;
+}
+
+body > h2 {
+    border-bottom: 1px solid #ccc; /* Línea divisoria para los títulos h2 */
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify; /* Justificar el texto para mejorar la legibilidad */
+    line-height: 1.5; /* Añadido espacio entre líneas para mejorar la legibilidad del texto */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

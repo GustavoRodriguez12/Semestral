@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #c17f7f;
+    margin: 20px;
+    font-size: 16px;
+    color: #333; /* Color de texto predeterminado */
+}
+
+header {
+    background-color: #333;
+    color: #43e90c;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section {
+    padding: 20px;
+    background-color: #ffc7c7;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%; /* Hacer que los campos de entrada ocupen el 100% del ancho */
+}
+
+form input[type="submit"] {
+    background-color: #43e90c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2eae06;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #333; /* Asegurar que el color del texto sea visible en cualquier fondo */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
